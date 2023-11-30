@@ -1,0 +1,9 @@
+---
+images:
+  bus:
+    units:
+      - image: barney.ci/alpine%bus
+      - image: barney.ci/alpine%pkg/vim
+  test:
+    units:
+      - image: .%bus
