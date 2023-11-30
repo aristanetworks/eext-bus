@@ -1,0 +1,20 @@
+{
+  "": {
+    "commit": "864b5240ae1c4c40adeb8efd6f78dc5bf389db52"
+  },
+  "barney.ci/alpine": {
+    "commit": "fb1ae6f324425a5f9260d60d7cc113146bb97913"
+  },
+  "barney.ci/barneyfile": {
+    "commit": "c982ff290580161cf773c422eb4088e150582727"
+  },
+  "barney.ci/golang": {
+    "commit": "e65a7b0113ce393b6250766401a421b1e00a1e1c"
+  },
+  "github.com/aristanetworks/cordspr": {
+    "commit": "082a850815ec6db845fc9a58a8a0bda465b2b44c"
+  },
+  "github.com/golang/go": {
+    "commit": "ed817f1c4055a559a94afffecbb91c78e4f39942"
+  }
+}
