@@ -9,7 +9,7 @@
     "commit": "c982ff290580161cf773c422eb4088e150582727"
   },
   "barney.ci/golang": {
-    "commit": "e65a7b0113ce393b6250766401a421b1e00a1e1c"
+    "commit": "8ddeed6bfa8ad35eefa2840ca790275e8a8ce50b"
   },
   "github.com/aristanetworks/cordspr": {
     "commit": "082a850815ec6db845fc9a58a8a0bda465b2b44c"
