@@ -6,7 +6,7 @@
     "commit": "fb1ae6f324425a5f9260d60d7cc113146bb97913"
   },
   "barney.ci/barney": {
-    "commit": "5357e147a37efc2020c9a26d1be2eb53b51267fd"
+    "commit": "11f6eaf410f6aa9bf6340a9dccf5563ae070d1db"
   },
   "barney.ci/barneyfile": {
     "commit": "c982ff290580161cf773c422eb4088e150582727"
@@ -24,7 +24,7 @@
     "commit": "a6b35b6e7a6d68e69ed2c6f9827e6b0b9210a0cd"
   },
   "github.com/aristanetworks/bst": {
-    "commit": "d88c8fe623c9d98038cdf5ee8588ee3890328f6c"
+    "commit": "7512a79d2e6fa0d6e9c82c824fb34f82cd51e1be"
   },
   "github.com/aristanetworks/cordspr": {
     "commit": "082a850815ec6db845fc9a58a8a0bda465b2b44c"
