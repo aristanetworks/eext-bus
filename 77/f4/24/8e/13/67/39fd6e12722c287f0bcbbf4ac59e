@@ -1,0 +1,38 @@
+{
+  "": {
+    "commit": "77f4248e136739fd6e12722c287f0bcbbf4ac59e"
+  },
+  "barney.ci/alpine": {
+    "commit": "fb1ae6f324425a5f9260d60d7cc113146bb97913"
+  },
+  "barney.ci/barney": {
+    "commit": "5357e147a37efc2020c9a26d1be2eb53b51267fd"
+  },
+  "barney.ci/barneyfile": {
+    "commit": "c982ff290580161cf773c422eb4088e150582727"
+  },
+  "barney.ci/bst": {
+    "commit": "9251114336d6f8b5327df00e8e03548c4708cee3"
+  },
+  "barney.ci/golang": {
+    "commit": "8ddeed6bfa8ad35eefa2840ca790275e8a8ce50b"
+  },
+  "barney.ci/scdoc": {
+    "commit": "98217b1e9dd1484ca6ae055684d2e4955b6bb7a3"
+  },
+  "git.sr.ht/~sircmpwn/scdoc": {
+    "commit": "a6b35b6e7a6d68e69ed2c6f9827e6b0b9210a0cd"
+  },
+  "github.com/aristanetworks/bst": {
+    "commit": "d88c8fe623c9d98038cdf5ee8588ee3890328f6c"
+  },
+  "github.com/aristanetworks/cordspr": {
+    "commit": "082a850815ec6db845fc9a58a8a0bda465b2b44c"
+  },
+  "github.com/golang/go": {
+    "commit": "6018ad99a4a951581b2d846a8ccd6f1d4e74fd11"
+  },
+  "github.com/helm/helm": {
+    "commit": "1bc823409bf74ff56a9ec3fc9f050bbe6a8d2a7b"
+  }
+}
