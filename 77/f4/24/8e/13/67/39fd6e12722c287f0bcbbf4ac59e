@@ -30,7 +30,7 @@
     "commit": "b79ab6f98f226bfa80ba0a00e3fc8af9f70be018"
   },
   "github.com/aristanetworks/cordspr": {
-    "commit": "27a1d6c615437e997b87e9c61ba7a66d4073e78a"
+    "commit": "f81d07a070d719ce73a71eedb5796d1826ada891"
   },
   "github.com/golang/go": {
     "commit": "f29208030ab80769ce61dedb5a419821abf92113"
