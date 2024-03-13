@@ -33,7 +33,7 @@
     "commit": "f81d07a070d719ce73a71eedb5796d1826ada891"
   },
   "github.com/golang/go": {
-    "commit": "f29208030ab80769ce61dedb5a419821abf92113"
+    "commit": "db6097f8cbaceaed02051850d2411c88b763a0c3"
   },
   "github.com/helm/helm": {
     "commit": "1bc823409bf74ff56a9ec3fc9f050bbe6a8d2a7b"
