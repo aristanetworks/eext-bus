@@ -1,9 +1,38 @@
 ---
 images:
-  bus:
+  barney-bus:
     units:
       - image: barney.ci/barney%bus
       - image: barney.ci/alpine%pkg/vim
-  test:
+
+  homebus:
     units:
-      - image: .%bus
+      - image: code.arista.io/eos/tools/eext%base-image-devel
+      - image: code.arista.io/eos/tools/eext%go-binaries
+      - image: code.arista.io/eos/tools/eext%eext-configfiles
+    entry:
+      env:
+        EEXT_DEPSDIR: "/dest/RPMS"
+  
+  docker-entrypoint:
+    no-create-mountpoints: true
+    units:
+      - build: |
+          mkdir -p /dest/usr/bin
+          chmod 0555 /dest/usr/bin
+          cp -p docker/entrypoint.bash /dest/usr/bin/
+
+  docker:
+    units:
+      - image: .%docker-entrypoint
+      - image: .%homebus
+    metadata:
+      docker:
+        entrypoint: [ /usr/bin/entrypoint.bash ]
+        env: 
+           - "EEXT_DEPSDIR=/dest/RPMS"
+
+  test/docker:
+    units:
+      - image: .%docker
+
