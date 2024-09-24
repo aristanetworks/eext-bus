@@ -24,7 +24,7 @@ setup_user() {
 setup_dirs() {
    mkdir -p /dest/RPMS
    mkdir /var/eext
-   chown -R "${LOCAL_USER}":"${LOCAL_USER}" /dest /var/eext /var/lib/rpm /usr/share/eext
+   chown -R "${LOCAL_USER}":"${LOCAL_USER}" /dest /var/eext /var/lib/rpm /usr/share/eext /etc/pki/eext
 }
 
 install_packages() {
