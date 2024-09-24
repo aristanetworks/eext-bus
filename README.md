@@ -17,17 +17,11 @@ Please add the following to your shell configuration (Eg: .bashrc file):
 ```
 EEXTC_NAME="${USER}-eext"
 EEXTC_ARGS="--name ${EEXTC_NAME} -d --cap-add CAP_SYS_ADMIN -v /home/${USER}:/home/${USER} -e LOCAL_USER=${USER} -e LOCAL_UID=$(id -u $USER) -e LOCAL_GID=$(id -g $USER)"
-function eext_image_name() {
-   set -x
-   local eextbus_sha
-   eextbus_sha=$(git ls-remote https://github.com/aristanetworks/eext-bus refs/heads/main | cut -f 1)
-   echo "barney-docker.infra.corp.arista.io/code.arista.io/eos/tools/eext-bus:${eextbus_sha}"
-   set +x
-}
+EEXTC_IMAGE_NAME="barney-docker.infra.corp.arista.io/code.arista.io/eos/tools/eext-bus"
 function eextc() {
    set -x
-   docker pull "$(eext_image_name)"
-   docker run ${EEXTC_ARGS} $(eext_image_name)
+   docker pull ${EEXTC_IMAGE_NAME}
+   docker run ${EEXTC_ARGS} ${EEXTC_IMAGE_NAME}
    set +x
 }
 alias eexte="docker exec -it ${EEXTC_NAME} sudo su - ${USER}"
@@ -40,15 +34,7 @@ You can run `eexte` to open a shell in the new container, or to further create m
 ##### Creating the container
 ```
 ~ @aajith-home-njj5v# eextc
-++ eext_image_name
-++ set -x
-++ local eextbus_sha
-+++ git ls-remote https://github.com/aristanetworks/eext-bus refs/heads/main
-+++ cut -f 1
-++ eextbus_sha=7084fa3e2f488264f1406ed72e4f4986073b024e
-++ echo barney-docker.infra.corp.arista.io/code.arista.io/eos/tools/eext-bus:7084fa3e2f488264f1406ed72e4f4986073b024e
-++ set +x
-+ docker pull barney-docker.infra.corp.arista.io/code.arista.io/eos/tools/eext-bus:7084fa3e2f488264f1406ed72e4f4986073b024e
++ docker pull barney-docker.infra.corp.arista.io/code.arista.io/eos/tools/eext-bus
 b79495462cd4: Already exists
 6762c4b26f94: Already exists
 140ebc0869fa: Already exists
@@ -68,9 +54,10 @@ Be warned that the pull can take a few minutes if the image is not in the Barney
 [aajith@cd83fcd655da ~] which eext
 /usr/bin/eext
 ```
+Note that the `eext` binary is installed inside the container.
 
 #### Updating to the latest eext container image.
-If you want to update the eext image, remove the old container and run eextc again.
+If you want to update your container to the latest eext image, just remove the old container and run `eextc` again to create one afresh.
 ```
 ~ @aajith-home-njj5v# docker rm -f ${EEXTC_NAME}
 ~ @aajith-home-njj5v# eextc
