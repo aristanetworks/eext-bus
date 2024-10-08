@@ -14,7 +14,7 @@
 			"commit": "5e45f4f5d84591798dfe23a44c5e9e7d5735c580"
 		},
 		"code.arista.io/eos/tools/eext": {
-			"commit": "8e05b46fb09e5322bbca00e45b3f4846e6fcb371"
+			"commit": "4b0cbae0fa2c8549a1746ff2a1c0407f49508b7f"
 		},
 		"github.com/golang/go": {
 			"commit": "69234ded30614a471c35cef5d87b0e0d3c136cd9"
